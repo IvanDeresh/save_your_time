@@ -6,7 +6,7 @@ const TheFooter = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <footer className="border-t-2 pt-5 flex flex-wrap font-extralight w-full justify-between p-5 gap-4">
+    <footer className="border-t pt-5 flex flex-wrap font-extralight w-full justify-between p-5 gap-4">
       <div className="w-2/6">
         <h2 className="font-medium text-xl mb-2">Subscribe</h2>
         <div className="flex gap-2">
