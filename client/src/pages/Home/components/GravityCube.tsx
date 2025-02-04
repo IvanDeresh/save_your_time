@@ -25,7 +25,7 @@ const Cube = () => {
 };
 
 const getFaceTransform = (face: string) => {
-  const size = 40;
+  const size = 50;
   switch (face) {
     case "front":
       return `translateZ(${size * 2}px)`;

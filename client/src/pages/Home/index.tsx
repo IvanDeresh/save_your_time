@@ -1,11 +1,11 @@
 import { clock, prod } from "../../assets/img";
-import Cube from "./components/GravityCube";
+import Polyhedron from "./components/GravityCube";
 
 const Home = () => {
   return (
     <div className="h-screen w-full flex items-center">
       <div className="w-1/2 relative">
-        <Cube />
+        <Polyhedron />
         <div className="absolute w-[100px] h-[100px] bg-black blur-3xl left-60 top-36 text-center flex items-center justify-center rounded-full shadow-[0px_4px_30px_rgba(0,0,0,0.2)]"></div>
       </div>
       <main className="w-1/2 flex gap-2 flex-col items-start ">
