@@ -7,6 +7,8 @@ import Calendar from "./pages/Calendar";
 import Todo from "./pages/Todo";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import SignIn from "./pages/Auth/Sign-in";
+import SignUp from "./pages/Auth/Sign-up";
 function App() {
   return (
     <div className="max-container font-nunito">
@@ -17,6 +19,8 @@ function App() {
         <Route path="/todo" element={<Todo />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/auth/sign-in" element={<SignIn />} />
+        <Route path="/auth/sign-up" element={<SignUp />} />
       </Routes>
       <TheFooter />
     </div>

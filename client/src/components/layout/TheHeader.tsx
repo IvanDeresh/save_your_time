@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { logo } from "../../assets/img";
-import Button from "../shared/Button";
 
 const TheHeader = () => {
   const textFromLogo = "Your Time";
@@ -34,7 +33,7 @@ const TheHeader = () => {
   }, [index, isDeleting]);
 
   return (
-    <header className="w-full flex items-center">
+    <header className="w-full flex items-center font-extralight">
       <div className="flex w-[40%] cursor-pointer justify-items-start items-center gap-2">
         <img className="w-10 h-10" src={logo} alt="logo for website" />
         <div className="flex flex-col max-h-10 justify-center items-start">
@@ -49,8 +48,13 @@ const TheHeader = () => {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </nav>
-      <div className="w-[20%]">
-        <Button label="Sign in" />
+      <div className="w-[20%] ">
+        <Link
+          className="border rounded-sm py-2 px-5 hover:shadow-2xl cursor-pointer"
+          to="/auth/sign-in"
+        >
+          Sign in
+        </Link>
       </div>
     </header>
   );
